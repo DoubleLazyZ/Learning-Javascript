@@ -1,0 +1,151 @@
+<mxfile host="65bd71144e">
+    <diagram id="ug38G6UqV3tzZ7y91YA-" name="第1頁">
+        <mxGraphModel dx="636" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="70" width="200" height="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Execution Context Stack" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="40" width="180" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40.12" y="475.77000000000004" width="220" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="8" vertex="1">
+                    <mxGeometry x="24" y="50.88" width="171" height="159.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="GEC(Global Execution Context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="8" vertex="1">
+                    <mxGeometry x="-0.5" y="17" width="220" height="20.352941176470587" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="8" vertex="1">
+                    <mxGeometry x="36" y="57.88" width="148" height="45.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="VO(Variable Object):GO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="8" vertex="1">
+                    <mxGeometry x="38" y="69.05842105263157" width="143" height="22.763157894736842" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="8" vertex="1">
+                    <mxGeometry x="36" y="111" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="開始執行程式" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="8" vertex="1">
+                    <mxGeometry x="66.5" y="122" width="86" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="foo()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="8" vertex="1">
+                    <mxGeometry x="90" y="142" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="76.44" width="164" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;div&gt;&amp;nbsp;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;String: '類',&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;window: this,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;name: undefined,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;foo:&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="93.44" width="114" height="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="GlobalObject" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="51.44" width="111" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="274.44" width="165" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="[[scope]]: parent scope&lt;br&gt;函數的執行體(程式塊)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="505.75" y="288.94" width="141" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="0x100&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="552" y="156.44" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="20" target="16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="546" y="122.44" as="sourcePoint"/>
+                        <mxPoint x="596" y="72.44" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="開新的記憶體空間儲存函數(foo)&lt;br&gt;會有一個記憶體地址(ex: 0x100)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="353.44" width="171" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="函數執行上下文foo()&lt;br&gt;FEC(Functional Excution Context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40.12" y="305.77" width="220" height="39.35" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="64.62" y="345.77" width="171" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="76.12" y="355.77" width="148" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="VO(Variable Object):AO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="84.12" y="362.00842105263155" width="143" height="22.763157894736842" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="查找一個變量的時候，真實的查找路徑會是沿著作用域鍊來查找" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="393.44" width="291" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Scope Chain: VO + Parent Scope" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="85.62" y="384.77" width="140" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="76.12" y="430.65" width="148" height="45.120000000000005" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="39" vertex="1">
+                    <mxGeometry width="148" height="45.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="開始執行程式" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="39" vertex="1">
+                    <mxGeometry x="31" y="12.560000000000002" width="86" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="48" width="164" height="172" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="40" vertex="1">
+                    <mxGeometry y="25" width="164" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ActivationObject(foo)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="40" vertex="1">
+                    <mxGeometry x="26.5" width="111" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;div&gt;&amp;nbsp;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;Number: '類',&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;window: this,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;num: undefined,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;m: undefined,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;n: undefined&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;bar: 0xb00&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="40" vertex="1">
+                    <mxGeometry x="28.75" y="52" width="114" height="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="279" y="293.44" width="165" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="[[scope]]: parent scope&lt;br&gt;函數的執行體(程式塊)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="291" y="307.94" width="141" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="儲存函數空間(bar) 0xb00&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="273" y="258.94" width="171" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="361.40999999999997" y="190.94000000000005" as="sourcePoint"/>
+                        <mxPoint x="361.90999999999997" y="288.94000000000005" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="函數執行上下文boo()&lt;br&gt;FEC(Functional Excution Context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="35.87" y="99.09999999999998" width="220" height="39.35" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="64.37" y="146.76999999999998" width="171" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="75.87" y="156.76999999999998" width="148" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Scope Chain: VO + Parent Scope" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="82.62" y="185.08999999999997" width="140" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="VO(Variable Object):AO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="81.12" y="162.32842105263154" width="143" height="22.763157894736842" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="408.44" width="164" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="ActivationObject(bar)&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="306.5" y="383.44" width="113.5" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;div&gt;&amp;nbsp;{&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="308.75" y="435.44" width="114" height="99" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="76.12" y="234.20999999999998" width="148" height="45.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="開始執行程式&lt;br&gt;&lt;div&gt;&lt;span&gt;console.log(name)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="243.39" width="86" height="26.77" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
