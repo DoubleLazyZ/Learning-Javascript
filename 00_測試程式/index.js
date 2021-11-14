@@ -6,6 +6,8 @@ function foo(el) {
 var obj = {
   id: 'awesome',
 }
+
+
 ;[1, 2, 3].forEach(foo, obj)
 
 // 1 awesome
