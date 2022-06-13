@@ -47,3 +47,4 @@ var obj2 = {
 }
 
 // 任何物件會指向一個Object的原型對象，其__proto__是[Object: null prototype]{}
+// 最頂層的物件的原型屬性指向null了，也就是頂層的原型了
